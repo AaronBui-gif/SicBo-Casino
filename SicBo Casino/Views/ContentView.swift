@@ -120,10 +120,8 @@ struct ContentView: View {
             
             // MARK: - GAME UI
             VStack {
-                // MARK: - LOGO HEADER
-                LogoView(logoFileName: "rmit-casino-welcome-logo")
                 Spacer()
-                
+                    .frame(height:50)
                 // MARK: - SCORE
                 HStack{
                     HStack{
@@ -154,9 +152,10 @@ struct ContentView: View {
                     
                     // MARK: - FIRST REEL
                     ZStack{
-                        ReelView()
+                        ReelView().frame(width:100, height:100)
                         Image(icons[reels[0]])
                             .resizable()
+                            .frame(width:50, height:50)
                             .modifier(IconImageModifier())
                             .opacity(animatingIcon ? 1 : 0)
                             .offset(y: animatingIcon ? 0 : -50)
@@ -171,9 +170,10 @@ struct ContentView: View {
                         
                         // MARK: - SECOND REEL
                         ZStack{
-                            ReelView()
+                            ReelView().frame(width:100, height:100)
                             Image(icons[reels[1]])
                                 .resizable()
+                                .frame(width:50, height:50)
                                 .modifier(IconImageModifier())
                                 .opacity(animatingIcon ? 1 : 0)
                                 .offset(y: animatingIcon ? 0 : -50)
@@ -188,9 +188,10 @@ struct ContentView: View {
                         
                         // MARK: - THIRD REEL
                         ZStack{
-                            ReelView()
+                            ReelView().frame(width:100, height:100)
                             Image(icons[reels[2]])
                                 .resizable()
+                                .frame(width:50, height:50)
                                 .modifier(IconImageModifier())
                                 .opacity(animatingIcon ? 1 : 0)
                                 .offset(y: animatingIcon ? 0 : -50)
@@ -225,6 +226,7 @@ struct ContentView: View {
                     } label: {
                         Image("spin")
                             .resizable()
+                            .frame(width:100, height:100)
                             .modifier(ReelImageModifier())
                     }
                     
