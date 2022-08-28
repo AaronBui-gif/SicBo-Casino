@@ -1,0 +1,48 @@
+
+[
+    {
+        "id":1,
+        "name": "Jason Momoa",
+        "highscore": 1300
+    },
+    {
+        "id": 2,
+        "name": "Jason Statham",
+        "highscore": 800
+    },
+    {
+        "id": 3,
+        "name": "Lilia Johnson",
+        "highscore": 720
+    },
+    {
+        "id": 4,
+        "name": "Reyna Robbs",
+        "highscore": 650
+    },
+    {
+        "id": 5,
+        "name": "Magnus Carlsen",
+        "highscore": 620
+    },
+    {
+        "id": 6,
+        "name": "Ethan Hunt",
+        "highscore": 600
+    },
+    {
+        "id": 7,
+        "name": "Rachel Cane",
+        "highscore": 570
+    },
+    {
+        "id": 8,
+        "name": "Elliot Lost",
+        "highscore": 530
+    },
+    {
+        "id": 9,
+        "name": "Thane Tone",
+        "highscore": 500
+    }
+]

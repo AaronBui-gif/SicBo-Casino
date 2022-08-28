@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SicBo_CasinoApp: App {
+    
+    @StateObject var userProgress = UserProgress()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainMenu()
+                .environmentObject(userProgress)
         }
     }
 }
