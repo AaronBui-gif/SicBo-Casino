@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BettingTableView: View {
-    
+    // MARK: - PROPERTIES
     @ObservedObject var userData: UserProgress
     
     // MARK: - BODY

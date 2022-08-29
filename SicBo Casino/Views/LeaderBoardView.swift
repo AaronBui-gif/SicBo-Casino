@@ -13,6 +13,7 @@
 import SwiftUI
 
 struct LeaderBoardView: View {
+    // MARK: - PROPERTIES
     @Binding var scoreboard: [LeaderBoard]
     
     // Configuring Back button
@@ -35,14 +36,17 @@ struct LeaderBoardView: View {
     
     @ObservedObject var userData: UserProgress
     
+    // MARK: - BODY
     var body: some View {
         
         NavigationView {
+            // MARK: - Background Image
             ZStack {
                 Image("leaderboardimage")
                     .resizable()
                     .frame(width: 450, height: 1085, alignment: .top)
-                    
+                   
+                // MARK: - Displaying UI
                 VStack{
                     HStack (alignment: .center, spacing: 0){
                         Image("leaderboard")
@@ -69,6 +73,8 @@ struct LeaderBoardView: View {
                             Text("Score")
                         }
                     }.offset(y: -200)
+                    
+                    // MARK: - Displaying User Information
                     ScrollView {
 
                         VStack(spacing:20){
