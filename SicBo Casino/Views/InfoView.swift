@@ -59,7 +59,7 @@ struct InfoView: View {
             alignment: .topTrailing
             )
             .onAppear(perform: {
-              playSound(sound: "drum-music", type: "mp3")
+              playSound(sound: "On_My_Way", type: "mp3")
             })
       }
     

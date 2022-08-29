@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		753F7E7028AA9FB000D5E55A /* bet-chip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6828AA9FAF00D5E55A /* bet-chip.mp3 */; };
 		753F7E7128AA9FB000D5E55A /* blink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6928AA9FAF00D5E55A /* blink.mp3 */; };
-		753F7E7228AA9FB000D5E55A /* winning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6A28AA9FAF00D5E55A /* winning.mp3 */; };
-		753F7E7328AA9FB000D5E55A /* highscore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6B28AA9FB000D5E55A /* highscore.mp3 */; };
 		753F7E7428AA9FB000D5E55A /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6C28AA9FB000D5E55A /* gameover.mp3 */; };
 		753F7E7528AA9FB000D5E55A /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6D28AA9FB000D5E55A /* spin.mp3 */; };
 		753F7E7628AA9FB000D5E55A /* ring-up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6E28AA9FB000D5E55A /* ring-up.mp3 */; };
-		753F7E7728AA9FB000D5E55A /* drum-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753F7E6F28AA9FB000D5E55A /* drum-music.mp3 */; };
 		753F7E7B28AA9FC900D5E55A /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F7E7928AA9FC900D5E55A /* PlaySound.swift */; };
 		753F7E7C28AA9FC900D5E55A /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F7E7A28AA9FC900D5E55A /* Modifiers.swift */; };
 		753F7E7F28AAA03A00D5E55A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F7E7E28AAA03900D5E55A /* InfoView.swift */; };
@@ -22,6 +18,9 @@
 		753F7E8328AAA1AA00D5E55A /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F7E8228AAA1AA00D5E55A /* ReelView.swift */; };
 		753F7E8528AAA1D900D5E55A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F7E8428AAA1D900D5E55A /* ContentView.swift */; };
 		753F7E8728AAA86F00D5E55A /* BettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753F7E8628AAA86F00D5E55A /* BettingTableView.swift */; };
+		758ABAA428BBB62900C66A87 /* winning.wav in Resources */ = {isa = PBXBuildFile; fileRef = 758ABAA328BBB62900C66A87 /* winning.wav */; };
+		758ABAA628BBB7CE00C66A87 /* On_My_Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 758ABAA528BBB7CE00C66A87 /* On_My_Way.mp3 */; };
+		758ABAA828BBB91E00C66A87 /* highscore.wav in Resources */ = {isa = PBXBuildFile; fileRef = 758ABAA728BBB91E00C66A87 /* highscore.wav */; };
 		75AEC15C28B88F850076F43E /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC15B28B88F850076F43E /* NavigationBar.swift */; };
 		75AEC15E28B892170076F43E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC15D28B892160076F43E /* TestView.swift */; };
 		75B3EC8B28AF6F5E00C9D2ED /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3EC8A28AF6F5E00C9D2ED /* UserProgress.swift */; };
@@ -31,7 +30,6 @@
 		75C2746D28B27F500016EE00 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2746C28B27F500016EE00 /* MainMenu.swift */; };
 		75C2746F28B3B5D70016EE00 /* LeaderBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2746E28B3B5D70016EE00 /* LeaderBoardView.swift */; };
 		75C2747228B3B7870016EE00 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2747128B3B7870016EE00 /* LeaderBoard.swift */; };
-		75C2747628B3C72F0016EE00 /* LeaderBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2747528B3C72F0016EE00 /* LeaderBoardRow.swift */; };
 		75C2747D28B65D240016EE00 /* former-102685.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75C2747C28B65D230016EE00 /* former-102685.mp3 */; };
 		75C2747F28B65EC00016EE00 /* input-chip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75C2747E28B65EC00016EE00 /* input-chip.mp3 */; };
 		75C2748428B660350016EE00 /* leaderboard.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C2748328B660350016EE00 /* leaderboard.json */; };
@@ -39,14 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		753F7E6828AA9FAF00D5E55A /* bet-chip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bet-chip.mp3"; sourceTree = "<group>"; };
 		753F7E6928AA9FAF00D5E55A /* blink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blink.mp3; sourceTree = "<group>"; };
-		753F7E6A28AA9FAF00D5E55A /* winning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winning.mp3; sourceTree = "<group>"; };
-		753F7E6B28AA9FB000D5E55A /* highscore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = highscore.mp3; sourceTree = "<group>"; };
 		753F7E6C28AA9FB000D5E55A /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
 		753F7E6D28AA9FB000D5E55A /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
 		753F7E6E28AA9FB000D5E55A /* ring-up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ring-up.mp3"; sourceTree = "<group>"; };
-		753F7E6F28AA9FB000D5E55A /* drum-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drum-music.mp3"; sourceTree = "<group>"; };
 		753F7E7928AA9FC900D5E55A /* PlaySound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		753F7E7A28AA9FC900D5E55A /* Modifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		753F7E7E28AAA03900D5E55A /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -54,6 +48,9 @@
 		753F7E8228AAA1AA00D5E55A /* ReelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 		753F7E8428AAA1D900D5E55A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		753F7E8628AAA86F00D5E55A /* BettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingTableView.swift; sourceTree = "<group>"; };
+		758ABAA328BBB62900C66A87 /* winning.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = winning.wav; sourceTree = "<group>"; };
+		758ABAA528BBB7CE00C66A87 /* On_My_Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = On_My_Way.mp3; sourceTree = "<group>"; };
+		758ABAA728BBB91E00C66A87 /* highscore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = highscore.wav; sourceTree = "<group>"; };
 		75AEC15B28B88F850076F43E /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		75AEC15D28B892160076F43E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		75B3EC8A28AF6F5E00C9D2ED /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
@@ -64,7 +61,6 @@
 		75C2746C28B27F500016EE00 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		75C2746E28B3B5D70016EE00 /* LeaderBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardView.swift; sourceTree = "<group>"; };
 		75C2747128B3B7870016EE00 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
-		75C2747528B3C72F0016EE00 /* LeaderBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRow.swift; sourceTree = "<group>"; };
 		75C2747C28B65D230016EE00 /* former-102685.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "former-102685.mp3"; sourceTree = "<group>"; };
 		75C2747E28B65EC00016EE00 /* input-chip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "input-chip.mp3"; sourceTree = "<group>"; };
 		75C2748328B660350016EE00 /* leaderboard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = leaderboard.json; sourceTree = "<group>"; };
@@ -85,16 +81,15 @@
 		753F7E6728AA9F9500D5E55A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				758ABAA728BBB91E00C66A87 /* highscore.wav */,
+				758ABAA528BBB7CE00C66A87 /* On_My_Way.mp3 */,
+				758ABAA328BBB62900C66A87 /* winning.wav */,
 				75C2747E28B65EC00016EE00 /* input-chip.mp3 */,
 				75C2747C28B65D230016EE00 /* former-102685.mp3 */,
-				753F7E6828AA9FAF00D5E55A /* bet-chip.mp3 */,
 				753F7E6928AA9FAF00D5E55A /* blink.mp3 */,
-				753F7E6F28AA9FB000D5E55A /* drum-music.mp3 */,
 				753F7E6C28AA9FB000D5E55A /* gameover.mp3 */,
-				753F7E6B28AA9FB000D5E55A /* highscore.mp3 */,
 				753F7E6E28AA9FB000D5E55A /* ring-up.mp3 */,
 				753F7E6D28AA9FB000D5E55A /* spin.mp3 */,
-				753F7E6A28AA9FAF00D5E55A /* winning.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -121,7 +116,6 @@
 				753F7E8628AAA86F00D5E55A /* BettingTableView.swift */,
 				75C2746C28B27F500016EE00 /* MainMenu.swift */,
 				75C2746E28B3B5D70016EE00 /* LeaderBoardView.swift */,
-				75C2747528B3C72F0016EE00 /* LeaderBoardRow.swift */,
 				75AEC15B28B88F850076F43E /* NavigationBar.swift */,
 				75AEC15D28B892160076F43E /* TestView.swift */,
 			);
@@ -233,18 +227,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C2747D28B65D240016EE00 /* former-102685.mp3 in Resources */,
+				758ABAA828BBB91E00C66A87 /* highscore.wav in Resources */,
 				75C2747F28B65EC00016EE00 /* input-chip.mp3 in Resources */,
 				753F7E7528AA9FB000D5E55A /* spin.mp3 in Resources */,
 				753F7E7428AA9FB000D5E55A /* gameover.mp3 in Resources */,
+				758ABAA428BBB62900C66A87 /* winning.wav in Resources */,
+				758ABAA628BBB7CE00C66A87 /* On_My_Way.mp3 in Resources */,
 				75B5A7E828AA942600E9249A /* Preview Assets.xcassets in Resources */,
-				753F7E7028AA9FB000D5E55A /* bet-chip.mp3 in Resources */,
 				753F7E7628AA9FB000D5E55A /* ring-up.mp3 in Resources */,
 				75C2748428B660350016EE00 /* leaderboard.json in Resources */,
 				75B5A7E528AA942600E9249A /* Assets.xcassets in Resources */,
-				753F7E7728AA9FB000D5E55A /* drum-music.mp3 in Resources */,
-				753F7E7328AA9FB000D5E55A /* highscore.mp3 in Resources */,
 				753F7E7128AA9FB000D5E55A /* blink.mp3 in Resources */,
-				753F7E7228AA9FB000D5E55A /* winning.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +251,6 @@
 				75C2746F28B3B5D70016EE00 /* LeaderBoardView.swift in Sources */,
 				75C2747228B3B7870016EE00 /* LeaderBoard.swift in Sources */,
 				753F7E7C28AA9FC900D5E55A /* Modifiers.swift in Sources */,
-				75C2747628B3C72F0016EE00 /* LeaderBoardRow.swift in Sources */,
 				75AEC15E28B892170076F43E /* TestView.swift in Sources */,
 				753F7E8728AAA86F00D5E55A /* BettingTableView.swift in Sources */,
 				75AEC15C28B88F850076F43E /* NavigationBar.swift in Sources */,

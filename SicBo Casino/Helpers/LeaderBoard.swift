@@ -8,9 +8,10 @@
 import Foundation
 import SwiftUI
 
-class LeaderBoard: NSObject, Codable, Identifiable {
+struct LeaderBoard: Hashable, Codable, Identifiable{
     let id: Int
     let name: String
+
     var highscore: Float
     
     init(id: Int, name: String, highscore: Float) {

@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "chip.jpg",
+      "filename" : "chip.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chip@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "chip@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -47,15 +47,7 @@ class UserProgress: ObservableObject {
     @Published var hardBetRatioDouble: Float = 4
     @Published var easyBetRatioOneDice: Float = 1.6
     @Published var hardBetRatioOneDice: Float = 1.5
-    //@State private var highscore: Float = UserDefaults.standard.float(forKey: "highscore")
-    // Array to store highscore
-//    let leaderboard: [LeaderBoard] = []
-//    @Published var defaults = UserDefaults.standard
-//    defaults.set(leaderboard, forKey: "highscore")
-    // Access Shared Defaults Object
-    
-    // Read/Get Array of Strings
-    @Published var leaderboards: [LeaderBoard] = UserDefaults.standard.object(forKey: "highscoreboard") as? [LeaderBoard] ?? []
+    @Published var leader_score: Float = 0
 
     // MARK: - BET Odd LOGIC
     func chooseBetOdd() {

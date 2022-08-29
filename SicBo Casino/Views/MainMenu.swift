@@ -30,18 +30,25 @@ struct MainMenu: View {
 
                         }
                     NavigationLink{                        
-                        LeaderBoardView(userData: UserProgress())
+                        InfoView()
                         
                     } label: {
-
-                            Image("leaderboard_button")
+                        ZStack{
+                            Image("button")
                                 .resizable()
-                                .frame(width:150, height: 150, alignment: .center)
+                                .frame(width:200, height: 200, alignment: .center)
+                            Text("How to Play")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .font(.title)
+                        }
 
                         }
 
                         .frame(width: 400, height: 50, alignment: .center)
-                }
+                }.onAppear(perform: {
+                    playSound(sound: "On_My_Way", type: "mp3")
+                })
             }
         }.navigationBarTitle("")
             .navigationBarHidden(true)

@@ -45,7 +45,8 @@ struct ContentView: View {
     @State private var count = 1
     @State private var modeDoubleRatio: Float = 5
     @State private var modeOneDice: Float = 2
-    
+    @State private var scoreBoard: [Float] = []
+    @State private var scoreLeader: [LeaderBoard] = []
     func float2Digit(n: Float) -> String{
         let nf = NumberFormatter()
         nf.roundingMode = .down
@@ -433,7 +434,7 @@ struct ContentView: View {
         if coins > highscore{
             newHighScore()
         } else {
-            playSound(sound: "winning", type: "mp3")
+            playSound(sound: "winning", type: "wav")
         }
     }
     
@@ -446,20 +447,9 @@ struct ContentView: View {
     func newHighScore(){
         highscore = coins
         UserDefaults.standard.set(highscore, forKey: "highscore")
-        
-        let leader = LeaderBoard(id: 1, name: "User", highscore: highscore)
-        userData.leaderboards.append(leader)
-        if let data = try? NSKeyedArchiver.archivedData(withRootObject: leader, requiringSecureCoding: false) {
-            UserDefaults.standard.set(userData.leaderboards, forKey: "highscoreboard")
-        }
-
-        if let savedData = UserDefaults.standard.object(forKey: "highscoreboard") as? Data {
-            if let decodedPerson = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? LeaderBoard {
-                let leader = decodedPerson
-            }
-        }
-
-        playSound(sound: "highscore", type: "mp3")
+        scoreBoard.append(highscore)
+        scoreLeader.insert(LeaderBoard(id: 1, name: "User", highscore: highscore), at: 0)
+        playSound(sound: "highscore", type: "wav")
     }
     
     // MARK: - PLAYER LOSE LOGIC
@@ -526,17 +516,15 @@ struct ContentView: View {
                                     .font(.system(size: 20))
                             }
                         }
-                        NavigationLink{ InfoView().navigationBarTitle("")
-                                .navigationBarHidden(true)
-                            .navigationBarTitleDisplayMode(.inline)} label: {
+                        NavigationLink{ LeaderBoardView(scoreboard: $scoreLeader, userData: UserProgress())} label: {
                                 
                                 ZStack{
                                     Rectangle()
                                         .fill(.red)
                                         .border(.white, width:4)
                                     
-                                        .frame(width: 60, height: 40, alignment: .center)
-                                    Text("Info")
+                                        .frame(width: 80, height: 40, alignment: .center)
+                                    Text("Leader")
                                         .foregroundColor(.white)
                                         .fontWeight(.semibold)
                                         .font(.system(size: 20))
@@ -584,7 +572,7 @@ struct ContentView: View {
                                     .animation(.easeOut(duration: Double.random(in: 0.5...0.7)), value: animatingIcon)
                                     .onAppear(perform: {
                                         self.animatingIcon.toggle()
-                                        playSound(sound: "blink", type: "mp3")
+                                        playSound(sound: "former-102685", type: "mp3")
                                     })
                                 
                             }
@@ -601,7 +589,7 @@ struct ContentView: View {
                                     .animation(.easeOut(duration: Double.random(in: 0.7...0.9)), value: animatingIcon)
                                     .onAppear(perform: {
                                         self.animatingIcon.toggle()
-                                        playSound(sound: "blink", type: "mp3")
+                                        playSound(sound: "former-102685", type: "mp3")
                                     })
                             }
                             
@@ -619,7 +607,7 @@ struct ContentView: View {
                                     .animation(.easeOut(duration: Double.random(in: 0.9...1.1)), value: animatingIcon)
                                     .onAppear(perform: {
                                         self.animatingIcon.toggle()
-                                        playSound(sound: "blink", type: "mp3")
+                                        playSound(sound: "former-102685", type: "mp3")
                                     })
                             }
                         }
@@ -703,7 +691,6 @@ struct ContentView: View {
                         default: myString = "Press me"
                         }
                     }) {
-                        Text("\(count)")
                         ZStack {
                             Rectangle()
                                 .fill(.red)
@@ -713,9 +700,6 @@ struct ContentView: View {
                         }
                         .foregroundColor(.white)
                     }.offset(x:150 ,y:-90)
-                    
-                    Text("\(String(describing: userData.leaderboards))")
-                        .offset(x:-100 ,y:-60)
                     ScrollView{
                         VStack{
                             ZStack(alignment: .leading){
@@ -777,7 +761,7 @@ struct ContentView: View {
                 .padding()
                 .frame(maxWidth: 720)
                 .blur(radius:  showGameOverModal ? 5 : 0 , opaque: false)
-                
+                .offset(y:-10)
                 
                 
                 // MARK: - GAMEOVER MODAL
@@ -801,7 +785,7 @@ struct ContentView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(maxHeight: 150)
-                                Text("You lost all money!\nYou are not the god of gambler!\n Good luck next time!")
+                                Text("You lost all money!")
                                     .font(.system(.body, design: .rounded))
                                     .foregroundColor(Color.white)
                                     .multilineTextAlignment(.center)
@@ -825,12 +809,14 @@ struct ContentView: View {
                         .background(Color("ColorBlueRMIT"))
                         .cornerRadius(20)
                     }.onAppear(perform: {
-                        playSound(sound: "former-102685", type: "mp3")
+                        playSound(sound: "On_My_Way", type: "mp3")
                     })
+                    
                 } //ZStack
             }.navigationBarTitle("")
                 .navigationBarHidden(true)
                 .navigationBarTitleDisplayMode(.inline)
+                
         }
     }
 }
