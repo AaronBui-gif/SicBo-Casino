@@ -22,7 +22,6 @@
 		758ABAA628BBB7CE00C66A87 /* On_My_Way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 758ABAA528BBB7CE00C66A87 /* On_My_Way.mp3 */; };
 		758ABAA828BBB91E00C66A87 /* highscore.wav in Resources */ = {isa = PBXBuildFile; fileRef = 758ABAA728BBB91E00C66A87 /* highscore.wav */; };
 		75AEC15C28B88F850076F43E /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC15B28B88F850076F43E /* NavigationBar.swift */; };
-		75AEC15E28B892170076F43E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEC15D28B892160076F43E /* TestView.swift */; };
 		75B3EC8B28AF6F5E00C9D2ED /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3EC8A28AF6F5E00C9D2ED /* UserProgress.swift */; };
 		75B5A7E128AA942400E9249A /* SicBo_CasinoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B5A7E028AA942400E9249A /* SicBo_CasinoApp.swift */; };
 		75B5A7E528AA942600E9249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B5A7E428AA942600E9249A /* Assets.xcassets */; };
@@ -32,8 +31,6 @@
 		75C2747228B3B7870016EE00 /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2747128B3B7870016EE00 /* LeaderBoard.swift */; };
 		75C2747D28B65D240016EE00 /* former-102685.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75C2747C28B65D230016EE00 /* former-102685.mp3 */; };
 		75C2747F28B65EC00016EE00 /* input-chip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75C2747E28B65EC00016EE00 /* input-chip.mp3 */; };
-		75C2748428B660350016EE00 /* leaderboard.json in Resources */ = {isa = PBXBuildFile; fileRef = 75C2748328B660350016EE00 /* leaderboard.json */; };
-		75C2748628B660E70016EE00 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C2748528B660E70016EE00 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +49,6 @@
 		758ABAA528BBB7CE00C66A87 /* On_My_Way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = On_My_Way.mp3; sourceTree = "<group>"; };
 		758ABAA728BBB91E00C66A87 /* highscore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = highscore.wav; sourceTree = "<group>"; };
 		75AEC15B28B88F850076F43E /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
-		75AEC15D28B892160076F43E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		75B3EC8A28AF6F5E00C9D2ED /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
 		75B5A7DD28AA942400E9249A /* SicBo Casino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SicBo Casino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B5A7E028AA942400E9249A /* SicBo_CasinoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicBo_CasinoApp.swift; sourceTree = "<group>"; };
@@ -63,8 +59,6 @@
 		75C2747128B3B7870016EE00 /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
 		75C2747C28B65D230016EE00 /* former-102685.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "former-102685.mp3"; sourceTree = "<group>"; };
 		75C2747E28B65EC00016EE00 /* input-chip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "input-chip.mp3"; sourceTree = "<group>"; };
-		75C2748328B660350016EE00 /* leaderboard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = leaderboard.json; sourceTree = "<group>"; };
-		75C2748528B660E70016EE00 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +95,6 @@
 				753F7E7928AA9FC900D5E55A /* PlaySound.swift */,
 				75B3EC8A28AF6F5E00C9D2ED /* UserProgress.swift */,
 				75C2747128B3B7870016EE00 /* LeaderBoard.swift */,
-				75C2748528B660E70016EE00 /* ModelData.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -117,7 +110,6 @@
 				75C2746C28B27F500016EE00 /* MainMenu.swift */,
 				75C2746E28B3B5D70016EE00 /* LeaderBoardView.swift */,
 				75AEC15B28B88F850076F43E /* NavigationBar.swift */,
-				75AEC15D28B892160076F43E /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,7 +133,6 @@
 		75B5A7DF28AA942400E9249A /* SicBo Casino */ = {
 			isa = PBXGroup;
 			children = (
-				75C2748228B660070016EE00 /* Resource */,
 				753F7E7D28AAA02900D5E55A /* Views */,
 				753F7E7828AA9FB600D5E55A /* Helpers */,
 				753F7E6728AA9F9500D5E55A /* Sounds */,
@@ -158,14 +149,6 @@
 				75B5A7E728AA942600E9249A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		75C2748228B660070016EE00 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				75C2748328B660350016EE00 /* leaderboard.json */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +218,6 @@
 				758ABAA628BBB7CE00C66A87 /* On_My_Way.mp3 in Resources */,
 				75B5A7E828AA942600E9249A /* Preview Assets.xcassets in Resources */,
 				753F7E7628AA9FB000D5E55A /* ring-up.mp3 in Resources */,
-				75C2748428B660350016EE00 /* leaderboard.json in Resources */,
 				75B5A7E528AA942600E9249A /* Assets.xcassets in Resources */,
 				753F7E7128AA9FB000D5E55A /* blink.mp3 in Resources */,
 			);
@@ -251,7 +233,6 @@
 				75C2746F28B3B5D70016EE00 /* LeaderBoardView.swift in Sources */,
 				75C2747228B3B7870016EE00 /* LeaderBoard.swift in Sources */,
 				753F7E7C28AA9FC900D5E55A /* Modifiers.swift in Sources */,
-				75AEC15E28B892170076F43E /* TestView.swift in Sources */,
 				753F7E8728AAA86F00D5E55A /* BettingTableView.swift in Sources */,
 				75AEC15C28B88F850076F43E /* NavigationBar.swift in Sources */,
 				753F7E8128AAA0D900D5E55A /* LogoView.swift in Sources */,
@@ -262,7 +243,6 @@
 				753F7E7F28AAA03A00D5E55A /* InfoView.swift in Sources */,
 				75B5A7E128AA942400E9249A /* SicBo_CasinoApp.swift in Sources */,
 				75B3EC8B28AF6F5E00C9D2ED /* UserProgress.swift in Sources */,
-				75C2748628B660E70016EE00 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

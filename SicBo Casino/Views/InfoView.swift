@@ -1,9 +1,14 @@
-//
-//  InfoView.swift
-//  RMIT Casino
-//
-//  Created by Tom Huynh on 8/2/22.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Bui Thanh Huy
+  ID: s3740934
+  Created  date: Mon 29 Aug
+  Last modified: Mon 29 Aug
+  Acknowledgement: Tom Huynh RMIT_Casino
+*/
 
 import SwiftUI
 

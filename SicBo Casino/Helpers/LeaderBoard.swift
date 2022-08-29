@@ -1,9 +1,14 @@
-//
-//  LeaderBoard.swift
-//  SicBo Casino
-//
-//  Created by Huy Bui Thanh on 22/08/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Bui Thanh Huy
+  ID: s3740934
+  Created  date: Mon 29 Aug
+  Last modified: Mon 29 Aug
+  Acknowledgement: Tom Huynh RMIT_Casino
+*/
 
 import Foundation
 import SwiftUI
